@@ -1,11 +1,14 @@
-import { defineBackend } from '@aws-amplify/backend';
-import { auth } from './auth/resource';
-import { data } from './data/resource';
+// amplify/backend.ts
+import { Stack, App } from "aws-cdk-lib";
+import { auth } from "./auth/resource";
 
-/**
- * @see https://docs.amplify.aws/react/build-a-backend/ to add storage, functions, and more
- */
-defineBackend({
-  auth,
-  data,
-});
+const app = new App();
+
+// Create a stack for Amplify backend
+export const stack = new Stack(app, "AmplifyBackendStack");
+
+// The auth construct has already been exported from auth/resource.ts
+// You can import and use other backend resources here
+
+
+

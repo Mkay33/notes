@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactviteproject-dev-9fb02-authRole",
+      "UnauthRoleArn": "arn:aws:iam::995772916800:role/amplify-reactviteproject-dev-9fb02-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::995772916800:role/amplify-reactviteproject-dev-9fb02-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactviteproject-dev-9fb02-deployment",
+      "UnauthRoleName": "amplify-reactviteproject-dev-9fb02-unauthRole",
+      "StackName": "amplify-reactviteproject-dev-9fb02",
+      "StackId": "arn:aws:cloudformation:us-east-1:995772916800:stack/amplify-reactviteproject-dev-9fb02/6b2edc10-c7b0-11f0-8bc6-0affc360c3fd",
+      "AmplifyAppId": "d3mlodv7gara0n"
+    }
+  }
+}
