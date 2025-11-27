@@ -1,14 +1,36 @@
 // amplify/backend.ts
-import { Stack, App } from "aws-cdk-lib";
-import { auth } from "./auth/resource";
 
-const app = new App();
+// --- DATA IMPORT (robust) ---
+import * as schemaModule from "./data/resource";
 
-// Create a stack for Amplify backend
-export const stack = new Stack(app, "AmplifyBackendStack");
+// Prefer "data" named export → default export → full module
+const data =
+  (schemaModule as any).data ??
+  (schemaModule as any).default ??
+  schemaModule;
 
-// The auth construct has already been exported from auth/resource.ts
-// You can import and use other backend resources here
+// --- AUTH IMPORT (robust) ---
+import * as authModule from "./auth/resource";
+
+// Prefer "AuthResource" → default export → undefined
+const auth =
+  (authModule as any).AuthResource ??
+  (authModule as any).default ??
+  undefined;
+
+// --- BACKEND EXPORT ---
+export const backend = {
+  data,
+  auth,
+};
+
+
+
+
+
+
+
+
 
 
 

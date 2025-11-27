@@ -10,6 +10,19 @@
       "StackName": "amplify-reactviteproject-dev-9fb02",
       "StackId": "arn:aws:cloudformation:us-east-1:995772916800:stack/amplify-reactviteproject-dev-9fb02/6b2edc10-c7b0-11f0-8bc6-0affc360c3fd",
       "AmplifyAppId": "d3mlodv7gara0n"
+    },
+    "categories": {
+      "auth": {
+        "reactviteprojectb35197f0": {}
+      },
+      "function": {
+        "mydbfunction": {
+          "dbConnectionUri": "postgresql://postgres:CyrusBeene284!@mydb.coj0mysg0g09.us-east-1.rds.amazonaws.com:5432/postgres",
+          "secretsPathAmplifyAppId": "d3mlodv7gara0n",
+          "deploymentBucketName": "amplify-reactviteproject-dev-9fb02-deployment",
+          "s3Key": "amplify-builds/mydbfunction-666f744375754d52566a-build.zip"
+        }
+      }
     }
   }
 }

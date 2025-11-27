@@ -1,1 +1,70 @@
-{}
+{
+  "auth": {
+    "reactviteprojectb35197f0": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "mydbfunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_mydbfunction_dbConnectionUri": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydbfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_mydbfunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydbfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_mydbfunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydbfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_mydbfunction_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mydbfunction"
+        }
+      ]
+    }
+  }
+}

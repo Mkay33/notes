@@ -1,0 +1,13 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "dbConnectionUri",
+      "environmentVariableName": "DB_CONNECTION_URI"
+    }
+  ],
+  "secretNames": [
+    "DB_CONNECTION_URI"
+  ]
+}
